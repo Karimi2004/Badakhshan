@@ -3,61 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>معرفی بدخشان | مروارید پنهان</title>
+    <title>بدخشان پایتخت طبیعت افغانستان</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
     
     <style>
-        body { background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        :root { --primary-color: #0b5345; --accent-color: #d4ac0d; }
+        body { background-color: #f4f7f6; font-family: 'Tahoma', sans-serif; scroll-behavior: smooth; }
+        
+        /* منوی بالا */
+        .navbar { background-color: rgba(11, 83, 69, 0.9) !important; backdrop-filter: blur(10px); }
+        
+        /* بخش قهرمان */
         .hero-section { 
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1596464716127-f2a82984de30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1629729802306-2c196af7eef5?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover; background-position: center; color: white; padding: 150px 0;
         }
-        .feature-box { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s; }
-        .feature-box:hover { transform: translateY(-10px); }
-        .btn-custom { background-color: #157347; color: white; border-radius: 25px; padding: 10px 30px; }
+
+        /* افکت روی عکس‌ها و کارت‌ها */
+        .feature-card {
+            border: none; border-radius: 20px; overflow: hidden;
+            transition: all 0.4s ease-in-out; cursor: pointer; box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+        .feature-card:hover { 
+            transform: scale(1.05); /* بزرگ شدن عکس هنگام رفتن ماوس */
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .feature-card img { height: 250px; object-fit: cover; }
+        
+        .section-title { color: var(--primary-color); font-weight: bold; margin-bottom: 40px; border-bottom: 3px solid var(--accent-color); display: inline-block; }
     </style>
 </head>
 <body>
 
-    <div class="hero-section">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
-            <h1 class="display-3 fw-bold">بدخشان؛ سرزمین لعل و لاجورد</h1>
-            <p class="lead">سفری به بلندترین قله‌ها و بکرترین طبیعت افغانستان</p>
-            <a href="#about" class="btn btn-custom btn-lg mt-3">بیشتر بدانید</a>
+            <a class="navbar-brand fw-bold" href="#">بدخشان زیبا</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#about">معرفی</a>
+                <a class="nav-link" href="#gallery">گالری</a>
+                <a class="nav-link" href="#contact">ارتباط</a>
+            </div>
         </div>
-    </div>
+    </nav>
 
-    <div class="container my-5" id="about">
-        <div class="row g-4 text-center">
-            <div class="col-md-4">
-                <div class="feature-box">
-                    <h3 class="h5 text-success">طبیعت واخان</h3>
-                    <p class="small text-muted">آشنایی با پارک ملی واخان و حیات وحش منحصر به فرد آن.</p>
-                </div>
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-2 fw-bold">نگین سبز هندوکش</h1>
+            <p class="fs-4">تجربه آرامش در بلندترین بام جهان</p>
+        </div>
+    </header>
+
+    <section id="about" class="container my-5 py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="section-title">درباره بدخشان</h2>
+                <p class="lead text-secondary">
+                    بدخشان ولایتی در شمال‌شرق افغانستان است که با تاجیکستان، چین و پاکستان مرز مشترک دارد. این سرزمین با داشتن کوه‌های سر به فلک کشیده پامیر و هندوکش، به «بام دنیا» شهرت یافته است.
+                </p>
+                <p>معادن لعل و لاجورد این ولایت از هزاران سال پیش شهرت جهانی داشته و در اشعار شاعران بزرگی چون حافظ و سعدی نیز آمده است.</p>
             </div>
-            <div class="col-md-4">
-                <div class="feature-box">
-                    <h3 class="h5 text-success">معادن قیمتی</h3>
-                    <p class="small text-muted">تاریخچه استخراج لاجورد و لعل در کوه‌های سربه فلک کشیده.</p>
-                </div>
+            <div class="col-md-6 text-center">
+                <img src="https://images.unsplash.com/photo-1542332213-9b5a5a3f3c5e?auto=format&fit=crop&w=500&q=80" class="img-fluid rounded-circle shadow-lg" alt="طبیعت">
             </div>
-            <div class="col-md-4">
-                <div class="feature-box">
-                    <h3 class="h5 text-success">فرهنگ و تاریخ</h3>
-                    <p class="small text-muted">میراث غنی فرهنگی و زبان‌های بومی مردم شریف بدخشان.</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="section-title">جاذبه‌های توریستی</h2>
+            <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="واخان">
+                        <div class="card-body">
+                            <h5 class="card-title text-success fw-bold">دهلیز واخان</h5>
+                            <p class="card-text text-muted">منطقه‌ای بکر برای کوهنوردان و توریست‌های ماجراجو.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="فیض آباد">
+                        <div class="card-body">
+                            <h5 class="card-title text-success fw-bold">دریای کوکچه</h5>
+                            <p class="card-text text-muted">دریایی خروشان که از قلب کوه‌های هندوکش می‌گذرد.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="پامیر">
+                        <div class="card-body">
+                            <h5 class="card-title text-success fw-bold">اشکاشم و پامیر</h5>
+                            <p class="card-text text-muted">زیستگاه پلنگ برفی و گوسفند مارکوپولو.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <footer class="bg-dark text-white text-center py-4 mt-5">
-          <p class="mb-0"> Created by Faiq Ullah Faiq | student   NUTECH</p>
-        <small class="text-secondary">© ۲۰۲۶ - تمامی حقوق محفوظ است</small>
+        <p>ساخته شده با ❤️ توسط فایق | دانشجوی مهندسی نرم‌افزار</p>
+        <div class="mt-2">
+            <a href="#" class="text-warning text-decoration-none mx-2">فیسبوک</a> |
+            <a href="#" class="text-warning text-decoration-none mx-2">اینستاگرام</a>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
