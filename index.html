@@ -2,10 +2,64 @@
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>معرفی بدخشان</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرفی بدخشان | مروارید پنهان</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    
+    <style>
+        body { background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .hero-section { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1596464716127-f2a82984de30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .feature-box { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+        .feature-box:hover { transform: translateY(-10px); }
+        .btn-custom { background-color: #157347; color: white; border-radius: 25px; padding: 10px 30px; }
+    </style>
 </head>
 <body>
-    <h1>به سایت معرفی بدخشان خوش آمدید</h1>
-    <p>این سایت توسط فایق، دانشجوی مهندسی نرم‌افزار، برای معرفی زیبایی‌های بدخشان ساخته شده است.</p>
+
+    <div class="hero-section">
+        <div class="container">
+            <h1 class="display-3 fw-bold">بدخشان؛ سرزمین لعل و لاجورد</h1>
+            <p class="lead">سفری به بلندترین قله‌ها و بکرترین طبیعت افغانستان</p>
+            <a href="#about" class="btn btn-custom btn-lg mt-3">بیشتر بدانید</a>
+        </div>
+    </div>
+
+    <div class="container my-5" id="about">
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <h3 class="h5 text-success">طبیعت واخان</h3>
+                    <p class="small text-muted">آشنایی با پارک ملی واخان و حیات وحش منحصر به فرد آن.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <h3 class="h5 text-success">معادن قیمتی</h3>
+                    <p class="small text-muted">تاریخچه استخراج لاجورد و لعل در کوه‌های سربه فلک کشیده.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <h3 class="h5 text-success">فرهنگ و تاریخ</h3>
+                    <p class="small text-muted">میراث غنی فرهنگی و زبان‌های بومی مردم شریف بدخشان.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0">طراحی شده توسط فایق | دانشجوی مهندسی نرم‌افزار NUTECH</p>
+        <small class="text-secondary">© ۲۰۲۶ - تمامی حقوق محفوظ است</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
